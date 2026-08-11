@@ -1,0 +1,256 @@
+# ============================================================
+#                  GCR-RAG PROJECT .gitignore
+# ============================================================
+
+# ============================================================
+# 1. CREDENTIALS & SECURITY (CRITICAL!)
+# ============================================================
+credentials/
+credentials.json
+token.json
+*.json
+.env
+*.env
+sri.env
+secrets.py
+config.py
+*.pem
+*.key
+*.crt
+*.p12
+
+# ============================================================
+# 2. DATABASES (Large binary files)
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+metadata.db
+metadata.backup.db
+metadata.db-journal
+*.backup.db
+
+# ============================================================
+# 3. VECTOR INDEXES (Large binary files)
+# ============================================================
+faiss_index/
+faiss_index/*
+*.faiss
+*.pkl
+chroma_db/
+chroma_db/*
+*.index
+*.ann
+
+# ============================================================
+# 4. GRAPHS & RELATIONSHIP FILES (Pickle files)
+# ============================================================
+graphs/
+graphs/*
+*.graph.pkl
+*.pkl
+*.pickle
+
+# ============================================================
+# 5. DOWNLOADED FILES (Temporary)
+# ============================================================
+downloads/
+downloads/*
+*.pdf
+*.docx
+*.pptx
+*.ppt
+*.doc
+*.xlsx
+*.csv
+*.txt
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# ============================================================
+# 6. VISUALIZATIONS
+# ============================================================
+visualizations/
+visualizations/*
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+visualization_*.png
+tree_*.png
+context_*.png
+graph_*.png
+hierarchy_*.png
+
+# ============================================================
+# 7. PYTHON CACHE FILES
+# ============================================================
+__pycache__/
+__pycache__/*
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ============================================================
+# 8. VIRTUAL ENVIRONMENT
+# ============================================================
+venv/
+venv/*
+env/
+ENV/
+.venv/
+virtualenv/
+virtualenvs/
+*.venv
+pyvenv.cfg
+
+# ============================================================
+# 9. IDE & EDITOR FILES
+# ============================================================
+.vscode/
+.vscode/*
+.idea/
+.idea/*
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+
+# ============================================================
+# 10. JUPYTER NOTEBOOKS
+# ============================================================
+.ipynb_checkpoints/
+.ipynb_checkpoints/*
+*.ipynb_checkpoints
+*.ipynb
+
+# ============================================================
+# 11. TEST & COVERAGE FILES
+# ============================================================
+.pytest_cache/
+.pytest_cache/*
+.coverage
+htmlcov/
+htmlcov/*
+*.cover
+*.coverage
+.tox/
+.tox/*
+.mypy_cache/
+.mypy_cache/*
+.ruff_cache/
+.ruff_cache/*
+
+# ============================================================
+# 12. ENVIRONMENT & CONFIG FILES
+# ============================================================
+.venv
+.env
+.env.local
+.env.*.local
+*.local
+*.development
+*.production
+*.staging
+*.backup
+
+# ============================================================
+# 13. LOGS & TEMPORARY FILES
+# ============================================================
+logs/
+logs/*
+*.log
+temp/
+temp/*
+tmp/
+tmp/*
+*.tmp
+*.temp
+*.cache
+*.cached
+
+# ============================================================
+# 14. DEPLOYMENT & PACKAGE FILES
+# ============================================================
+*.whl
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.iso
+*.dmg
+*.pkg
+*.exe
+*.msi
+
+# ============================================================
+# 15. SYSTEM FILES
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+*.log
+
+# ============================================================
+# 16. PYTHON PACKAGE FILES
+# ============================================================
+pip-log.txt
+pip-delete-this-directory.txt
+.pip/
+.pip/*
+
+# ============================================================
+# 17. MODEL FILES (Optional)
+# ============================================================
+models/
+models/*
+*.h5
+*.pb
+*.onnx
+*.tflite
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# ============================================================
+# 18. ALL OTHER TEMPORARY FILES
+# ============================================================
+*.tmp
+*.temp
+*.backup
+*.old
+*.orig
+*.rej
+*.patch
+*.diff
+*.merge
